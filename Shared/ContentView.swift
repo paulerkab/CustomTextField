@@ -5,12 +5,18 @@
 //  Created by Ivan Kvasov on 06.05.2021.
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        NavigationView{
+            
+            newTextField()
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+        }
     }
 }
 

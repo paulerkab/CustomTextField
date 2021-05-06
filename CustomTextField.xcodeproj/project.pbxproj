@@ -13,6 +13,12 @@
 		3B10A2A5264460CC00C03F59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A290264460CB00C03F59 /* ContentView.swift */; };
 		3B10A2A6264460CC00C03F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B10A291264460CC00C03F59 /* Assets.xcassets */; };
 		3B10A2A7264460CC00C03F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B10A291264460CC00C03F59 /* Assets.xcassets */; };
+		3B10A2BD2644632D00C03F59 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2BC2644632D00C03F59 /* TextField.swift */; };
+		3B10A2BE2644632D00C03F59 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2BC2644632D00C03F59 /* TextField.swift */; };
+		3B10A2C12644639400C03F59 /* TextFieldNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2C02644639400C03F59 /* TextFieldNotifier.swift */; };
+		3B10A2C22644639400C03F59 /* TextFieldNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2C02644639400C03F59 /* TextFieldNotifier.swift */; };
+		3B10A2C42644690C00C03F59 /* NewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2C32644690C00C03F59 /* NewTextField.swift */; };
+		3B10A2C52644690C00C03F59 /* NewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2C32644690C00C03F59 /* NewTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		3B10A29E264460CC00C03F59 /* CustomTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B10A2A0264460CC00C03F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B10A2A1264460CC00C03F59 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3B10A2BC2644632D00C03F59 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		3B10A2C02644639400C03F59 /* TextFieldNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNotifier.swift; sourceTree = "<group>"; };
+		3B10A2C32644690C00C03F59 /* NewTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,8 @@
 			children = (
 				3B10A28F264460CB00C03F59 /* CustomTextFieldApp.swift */,
 				3B10A290264460CB00C03F59 /* ContentView.swift */,
+				3B10A2C32644690C00C03F59 /* NewTextField.swift */,
+				3B10A2BF2644635C00C03F59 /* TextField */,
 				3B10A291264460CC00C03F59 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -88,6 +99,15 @@
 				3B10A2A1264460CC00C03F59 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		3B10A2BF2644635C00C03F59 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				3B10A2BC2644632D00C03F59 /* TextField.swift */,
+				3B10A2C02644639400C03F59 /* TextFieldNotifier.swift */,
+			);
+			name = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B10A2C42644690C00C03F59 /* NewTextField.swift in Sources */,
+				3B10A2C12644639400C03F59 /* TextFieldNotifier.swift in Sources */,
+				3B10A2BD2644632D00C03F59 /* TextField.swift in Sources */,
 				3B10A2A4264460CC00C03F59 /* ContentView.swift in Sources */,
 				3B10A2A2264460CC00C03F59 /* CustomTextFieldApp.swift in Sources */,
 			);
@@ -196,6 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B10A2C52644690C00C03F59 /* NewTextField.swift in Sources */,
+				3B10A2C22644639400C03F59 /* TextFieldNotifier.swift in Sources */,
+				3B10A2BE2644632D00C03F59 /* TextField.swift in Sources */,
 				3B10A2A5264460CC00C03F59 /* ContentView.swift in Sources */,
 				3B10A2A3264460CC00C03F59 /* CustomTextFieldApp.swift in Sources */,
 			);
