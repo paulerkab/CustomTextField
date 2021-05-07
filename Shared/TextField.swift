@@ -31,8 +31,7 @@ struct CustomTextField: View {
                             
                             Text(title)
                                 .font(.caption)
-                                .fontWeight(.heavy)
-                                .foregroundColor(.gray)
+                                .foregroundColor(.black)
                                 .matchedGeometryEffect(id: title, in: animation)
                         }
                         
@@ -42,7 +41,6 @@ struct CustomTextField: View {
                                 
                                 Text(title)
                                     .font(.caption)
-                                    .fontWeight(.heavy)
                                     .foregroundColor(.gray)
                                     .matchedGeometryEffect(id: title, in: animation)
                             }
@@ -62,7 +60,7 @@ struct CustomTextField: View {
                     
                 }
                 Rectangle()
-                    .fill(Color.gray)
+                    .fill(Color.black)
                     .opacity(value == "" ? 1 : 0.5)
                     .frame(height: 1)
                     .padding(.top, 10)
