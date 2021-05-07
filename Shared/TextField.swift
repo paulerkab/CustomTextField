@@ -53,24 +53,23 @@ struct CustomTextField: View {
                                 TextField("", text: $value)
                                
                             }
-                        }
-                    }
+                        } //ZStack
+                    } //VStack3
                     
                     notifier.rightView
                     
-                }
+                } //HStack
                 Rectangle()
-                    .fill(Color.black)
-                    .opacity(value == "" ? 1 : 0.5)
+                    .fill(value == "" ? Color.gray : Color.black)
                     .frame(height: 1)
                     .padding(.top, 10)
-            }
+            } //VStack2
             
             if value == ""{
                 
                 Divider()
             }
-        }
+        } //VStack1
         .padding(.horizontal)
         .padding(.vertical,10)
         .cornerRadius(8)
@@ -84,13 +83,13 @@ struct CustomTextField: View {
 
 
 extension CustomTextField {
-    /// Sets the left view.
+    // left view.
     public func leftView<LRView: View>(@ViewBuilder _ view: @escaping () -> LRView) -> Self {
         notifier.leftView = AnyView(view())
         return self
     }
     
-    /// Sets the right view.
+    // right view.
     public func rightView<LRView: View>(@ViewBuilder _ view: @escaping () -> LRView) -> Self {
         notifier.rightView = AnyView(view())
         return self

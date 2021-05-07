@@ -19,6 +19,7 @@
 		3B10A2C22644639400C03F59 /* TextFieldNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2C02644639400C03F59 /* TextFieldNotifier.swift */; };
 		3B10A2C42644690C00C03F59 /* NewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2C32644690C00C03F59 /* NewTextField.swift */; };
 		3B10A2C52644690C00C03F59 /* NewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10A2C32644690C00C03F59 /* NewTextField.swift */; };
+		3B7AA88F2645C8FE005E506D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B7AA88E2645C8FE005E506D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		3B10A2BC2644632D00C03F59 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		3B10A2C02644639400C03F59 /* TextFieldNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldNotifier.swift; sourceTree = "<group>"; };
 		3B10A2C32644690C00C03F59 /* NewTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTextField.swift; sourceTree = "<group>"; };
+		3B7AA88E2645C8FE005E506D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3B10A289264460CA00C03F59 = {
 			isa = PBXGroup;
 			children = (
+				3B7AA88E2645C8FE005E506D /* README.md */,
 				3B10A28E264460CB00C03F59 /* Shared */,
 				3B10A298264460CC00C03F59 /* iOS */,
 				3B10A29F264460CC00C03F59 /* macOS */,
@@ -188,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7AA88F2645C8FE005E506D /* README.md in Resources */,
 				3B10A2A6264460CC00C03F59 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

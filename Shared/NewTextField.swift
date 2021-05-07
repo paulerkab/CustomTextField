@@ -9,10 +9,11 @@ import SwiftUI
 
 struct newTextField: View {
     
-    @State var labelMotconsu = ""
-    @State var dateMotconsu = ""
+    @State var email = ""
+    @State var date = ""
+    @State var password = ""
     
-    @State var dateMotconsuDate = Date()
+    @State var dateD = Date()
     
     @Namespace var animation
     
@@ -23,17 +24,20 @@ struct newTextField: View {
             Spacer(minLength: 0)
             
            
-            CustomTextField(title: "Название записи", value: $labelMotconsu, animation: animation)
+            CustomTextField(title: "Email", value: $email, animation: animation)
             
-            CustomTextField(title: "Дата записи", value: $dateMotconsu, animation: animation)
+            CustomTextField(title: "Password", value: $password, animation: animation)
+                .isSecureTextField(true)
+            
+            CustomTextField(title: "Date", value: $date, animation: animation)
                 .rightView(
                     {
                         ZStack {
-                            DatePicker("label", selection: $dateMotconsuDate, displayedComponents: [.date])
+                            DatePicker("label", selection: $dateD, displayedComponents: [.date])
                                 .datePickerStyle(CompactDatePickerStyle())
                                 .labelsHidden()
-                                .onChange(of: dateMotconsuDate) { (date) in
-                                    dateMotconsu = DateFormatter.formate.string(from: dateMotconsuDate)
+                                .onChange(of: dateD) { (str) in
+                                    date = DateFormatter.formate.string(from: dateD)
                                 }
                             Image(systemName: "calendar.badge.exclamationmark")
                                 .userInteractionDisabled()
