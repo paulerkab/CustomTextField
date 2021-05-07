@@ -65,10 +65,6 @@ struct CustomTextField: View {
                     .padding(.top, 10)
             } //VStack2
             
-            if value == ""{
-                
-                Divider()
-            }
         } //VStack1
         .padding(.horizontal)
         .padding(.vertical,10)
